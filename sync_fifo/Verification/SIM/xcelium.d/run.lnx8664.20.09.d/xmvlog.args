@@ -1,0 +1,33 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.20.09.d
+-RUNMODE
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+./../../RTL_5/controller_design.sv
+./../../RTL_5/fifo_design.sv
+./../../RTL_5/mem_design.sv
+./../../RTL_5/top_design.sv
+./../UVME/package/sync_fifo_pkg.sv
+./../UVME/top/sync_fifo_top.sv
+./../UVME/top/sync_fifo_inf.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.20.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.09.d/hdlrun.var
+-I_INCDIR
+/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/additions/sv
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.20.09.d/xllibs
+-ALLOWUNBOUND
+-ENABLEOIGW

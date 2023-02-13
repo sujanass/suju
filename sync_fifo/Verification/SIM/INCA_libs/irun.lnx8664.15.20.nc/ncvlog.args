@@ -1,0 +1,33 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+./../../RTL_2/controller_design.sv
+./../../RTL_2/fifo_design.sv
+./../../RTL_2/mem_design.sv
+./../../RTL_2/top_design.sv
+./../UVME/package/sync_fifo_pkg.sv
+./../UVME/top/sync_fifo_top.sv
+./../UVME/top/sync_fifo_inf.sv
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-I_INCDIR
+/tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/additions/sv
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND
+-ENABLEOIGW

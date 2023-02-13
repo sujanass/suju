@@ -1,0 +1,11 @@
+1676641590 /home/vvtrainee42/sujana/project/sync_fifo/RTL_1/controller_design.sv
+1676641590 /home/vvtrainee42/sujana/project/sync_fifo/RTL_1/fifo_design.sv
+1676641590 /home/vvtrainee42/sujana/project/sync_fifo/RTL_1/mem_design.sv
+1676641590 /home/vvtrainee42/sujana/project/sync_fifo/RTL_1/top_design.sv
+1676650074 /home/vvtrainee42/sujana/project/sync_fifo/RTL_2/controller_design.sv
+1676650074 /home/vvtrainee42/sujana/project/sync_fifo/RTL_2/fifo_design.sv
+1676650074 /home/vvtrainee42/sujana/project/sync_fifo/RTL_2/mem_design.sv
+1676650074 /home/vvtrainee42/sujana/project/sync_fifo/RTL_2/top_design.sv
+1676928516 /home/vvtrainee42/sujana/project/sync_fifo/Verification/UVME/package/sync_fifo_pkg.sv
+1676928210 /home/vvtrainee42/sujana/project/sync_fifo/Verification/UVME/top/sync_fifo_top.sv
+1676928094 /home/vvtrainee42/sujana/project/sync_fifo/Verification/UVME/top/sync_fifo_inf.sv

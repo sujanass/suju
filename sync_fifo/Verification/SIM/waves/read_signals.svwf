@@ -1,0 +1,178 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.reset}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.top_wr_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.top_wr_data[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.top_rd_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.top_rd_data[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.almost_empty_value[9:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.almost_full_value[9:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.almost_empty}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.almost_full}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.almost_empty}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.almost_full}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.wr_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.rd_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.wr_data[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.wr_ptr[5:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.rd_data_out[31:0]}]}
+	} ]]
+waveform hierarchy collapse $id
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.rd_ptr[5:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.overflow}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.underflow}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.temp_full}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.enqueue_fifo.wr_lvl[5:0]}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.top_rd_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.mem_re}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.dq_fifo_wr_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.dq_fifo_wr_data[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.dq_fifo_rd_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.mem_we}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.wr_addr[9:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.rd_addr[9:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.mem_din[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.data_flow_controller.mem_dout[31:0]}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.we}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.re}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.din[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.dout[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.mem[0:1023]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.wr_ptr[9:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.rd_ptr[9:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.empty}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.full}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.DATA_WIDTH}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.external_memory.ADDR_WIDTH}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.dequeue_fifo.wr_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.dequeue_fifo.wr_data[31:0]}]}
+	} ]]
+waveform hierarchy collapse $id
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.dequeue_fifo.wr_ptr[5:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.dequeue_fifo.rd_en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.dequeue_fifo.rd_data_out[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.dequeue_fifo.underflow}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {sync_fifo_top.dut.dequeue_fifo.overflow}]}
+	} ]]
+
+waveform xview limits 0 252ns

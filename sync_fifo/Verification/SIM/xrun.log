@@ -1,0 +1,982 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on Feb 13, 2023 at 22:58:14 IST
+xrun
+	-access +rwc
+	-f compile_list.f
+		./../../RTL_5/controller_design.sv
+		./../../RTL_5/fifo_design.sv
+		./../../RTL_5/mem_design.sv
+		./../../RTL_5/top_design.sv
+		./../UVME/package/sync_fifo_pkg.sv
+		./../UVME/top/sync_fifo_top.sv
+		./../UVME/top/sync_fifo_inf.sv
+	-uvmhome CDNS-1.1d
+	+UVM_TESTNAME=sync_fifo_write_test
+Recompiling... reason: file '../UVME/env/sync_fifo_scoreboard.sv' is newer than expected.
+	expected: Mon Feb 13 22:35:43 2023
+	actual:   Mon Feb 13 22:58:05 2023
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d
+file: ./../UVME/package/sync_fifo_pkg.sv
+	});
+	 |
+xmvlog: *W,INTOVF (./../UVME/sequence/sync_fifo_rand_sequence.sv,53|2): bit overflow during conversion from text [2.5(IEEE)] (9 bits).
+(`define macro: uvm_do_on_pri_with [/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_sequence_defines.svh line 199], `define macro: uvm_do_with [/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_sequence_defines.svh line 113], `include file: ./../UVME/sequence/sync_fifo_rand_sequence.sv line 53, file: ./../UVME/package/sync_fifo_pkg.sv line 19)
+	});
+	 |
+xmvlog: *W,INTOVF (./../UVME/sequence/sync_fifo_rand_sequence.sv,67|2): bit overflow during conversion from text [2.5(IEEE)] (9 bits).
+(`define macro: uvm_do_on_pri_with [/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_sequence_defines.svh line 199], `define macro: uvm_do_with [/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_sequence_defines.svh line 113], `include file: ./../UVME/sequence/sync_fifo_rand_sequence.sv line 67, file: ./../UVME/package/sync_fifo_pkg.sv line 19)
+	});
+	 |
+xmvlog: *W,INTOVF (./../UVME/sequence/sync_fifo_rand_sequence.sv,81|2): bit overflow during conversion from text [2.5(IEEE)] (9 bits).
+(`define macro: uvm_do_on_pri_with [/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_sequence_defines.svh line 199], `define macro: uvm_do_with [/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_sequence_defines.svh line 113], `include file: ./../UVME/sequence/sync_fifo_rand_sequence.sv line 81, file: ./../UVME/package/sync_fifo_pkg.sv line 19)
+	package worklib.sync_fifo_pkg:sv
+		errors: 0, warnings: 3
+file: ./../UVME/top/sync_fifo_top.sv
+	module worklib.sync_fifo_top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		sync_fifo_pkg
+		sync_fifo_top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    .almost_full_value(intf.almost_full_value),
+                                            |
+xmelab: *W,CUVMPW (../UVME/top/sync_fifo_top.sv,30|44): port sizes differ in port connection(32/10) for the instance(sync_fifo_top) .
+    .almost_empty_value(intf.almost_empty_value),
+                                              |
+xmelab: *W,CUVMPW (../UVME/top/sync_fifo_top.sv,31|46): port sizes differ in port connection(32/10) for the instance(sync_fifo_top) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.uvm_pkg:sv <0x067ec808>
+			streams:  21, words: 21157
+		worklib.uvm_pkg:sv <0x4a100d3b>
+			streams:  23, words: 32746
+		worklib.uvm_pkg:sv <0x58bf8489>
+			streams:  21, words: 25041
+		worklib.uvm_pkg:sv <0x4c011498>
+			streams:  23, words: 44085
+		worklib.uvm_pkg:sv <0x6ecb231d>
+			streams:  21, words: 26983
+		worklib.uvm_pkg:sv <0x50c53b14>
+			streams:  23, words: 49654
+		worklib.uvm_pkg:sv <0x1920bd1c>
+			streams:  21, words: 28925
+		worklib.uvm_pkg:sv <0x5257fbbe>
+			streams:  23, words: 55370
+		worklib.uvm_pkg:sv <0x00e79878>
+			streams:  21, words: 21157
+		worklib.uvm_pkg:sv <0x5d6efb2e>
+			streams:  23, words: 32746
+		worklib.uvm_pkg:sv <0x68373f98>
+			streams:  21, words: 23099
+		worklib.uvm_pkg:sv <0x4c220f5d>
+			streams:  23, words: 38354
+		worklib.uvm_pkg:sv <0x38e5c262>
+			streams:  21, words: 25041
+		worklib.uvm_pkg:sv <0x0125ef29>
+			streams:  23, words: 44133
+		worklib.uvm_pkg:sv <0x3d21141d>
+			streams:  21, words: 21157
+		worklib.uvm_pkg:sv <0x5a018fcc>
+			streams:  23, words: 32746
+		worklib.uvm_pkg:sv <0x4fdd7ae0>
+			streams:  21, words: 21157
+		worklib.uvm_pkg:sv <0x365ef2cb>
+			streams:  23, words: 32746
+		worklib.uvm_pkg:sv <0x1c36c54c>
+			streams:  21, words: 25041
+		worklib.uvm_pkg:sv <0x66af3c3d>
+			streams:  23, words: 44085
+		worklib.uvm_pkg:sv <0x2c36c436>
+			streams:  21, words: 26983
+		worklib.sync_fifo_pkg:sv <0x35f884b9>
+			streams:  22, words: 18068
+		worklib.uvm_pkg:sv <0x6f093550>
+			streams:  22, words: 23257
+		worklib.uvm_pkg:sv <0x36ec91ab>
+			streams:  22, words: 23689
+		worklib.uvm_pkg:sv <0x7a605373>
+			streams:  45, words: 49674
+		worklib.uvm_pkg:sv <0x1e428212>
+			streams:  22, words: 34940
+		worklib.uvm_pkg:sv <0x4bff0e81>
+			streams:  30, words: 36611
+		worklib.uvm_pkg:sv <0x6176d693>
+			streams:  23, words: 49702
+		worklib.uvm_pkg:sv <0x0f7a7e02>
+			streams:  30, words: 27525
+		worklib.uvm_pkg:sv <0x77ff4131>
+			streams: 258, words: 311484
+		worklib.uvm_pkg:sv <0x028dfc37>
+			streams:  23, words: 63859
+		worklib.sync_fifo_top:sv <0x166f9acf>
+			streams:  75, words: 85200
+		worklib.sync_fifo_pkg:sv <0x0649c19a>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       6       5
+		Interfaces:                    1       1
+		Verilog packages:              5       5
+		Registers:                 15032   10756
+		Scalar wires:                 81       -
+		Vectored wires:               30       -
+		Named events:                  4      12
+		Always blocks:                27      19
+		Initial blocks:              351     179
+		Clocking blocks:               2       2
+		Clocking items:               24      24
+		Parallel blocks:              26      27
+		Cont. assignments:            23      18
+		Pseudo assignments:           55      55
+		Assertions:                    2       2
+		SV Class declarations:       220     335
+		SV Class specializations:    425     425
+	Writing initial simulation snapshot: worklib.sync_fifo_top:sv
+Loading snapshot worklib.sync_fifo_top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (20.09-s009)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test sync_fifo_write_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+--------------------------------------------------------------
+Name                       Type                    Size  Value
+--------------------------------------------------------------
+uvm_test_top               sync_fifo_write_test    -     @2709
+  env                      sync_fifo_env           -     @2794
+    sync_fifo_agnt         sync_fifo_agent         -     @2849
+      driver               sync_fifo_driver        -     @2915
+        rsp_port           uvm_analysis_port       -     @3015
+        seq_item_port      uvm_seq_item_pull_port  -     @2964
+      monitor              sync_fifo_monitor       -     @3632
+        monitor_port       uvm_analysis_port       -     @3752
+      sequencer            sync_fifo_sequencer     -     @3046
+        rsp_export         uvm_analysis_export     -     @3105
+        seq_item_export    uvm_seq_item_pull_imp   -     @3653
+        arbitration_queue  array                   0     -    
+        lock_queue         array                   0     -    
+        num_last_reqs      integral                32    'd1  
+        num_last_rsps      integral                32    'd1  
+    sync_fifo_scb          sync_fifo_scoreboard    -     @2880
+      scb_port             uvm_analysis_imp        -     @3822
+--------------------------------------------------------------
+
+UVM_INFO ./../UVME/test/sync_fifo_write_test.sv(24) @ 0: uvm_test_top [uvm_test_top] it test first line
+UVM_INFO ./../UVME/test/sync_fifo_write_test.sv(27) @ 0: uvm_test_top [sync_fifo_write_test] inside the write test
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 0: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 0: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(26) @ 0: uvm_test_top.env.sync_fifo_agnt.driver [sync_fifo_driver] Insider driver run phase
+UVM_INFO ./../UVME/sequence/sync_fifo_write_sequence.sv(25) @ 0: uvm_test_top.env.sync_fifo_agnt.sequencer@@write_seq [sync_fifo_write_sequence] Reset seq: inside body
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 0: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 5: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 5 | hw_rst: 0, sw_rst: 0, top_wr_en: 0, top_wr_data: 0, top_rd_en: 0, almost_full_value: 0, almost_empty_value: 0, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 5: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 5: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 5: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                   5	 display 1 trans.top_rd_en = 0, read_delay_clk=0
+                   5	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(42) @ 10: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is low!
+UVM_INFO ./../UVME/test/sync_fifo_write_test.sv(32) @ 10: uvm_test_top [sync_fifo_write_test] write scenario 1 is completed
+UVM_INFO ./../UVME/sequence/sync_fifo_write_sequence.sv(25) @ 10: uvm_test_top.env.sync_fifo_agnt.sequencer@@write_seq [sync_fifo_write_sequence] Reset seq: inside body
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 10: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 15: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 15 | hw_rst: 0, sw_rst: 0, top_wr_en: 0, top_wr_data: 0, top_rd_en: 0, almost_full_value: 0, almost_empty_value: 0, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 1, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 15: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 15: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 15: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  15	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  15	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 20: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 20: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 25: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 25 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: f5c3771b, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 25: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 25: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 25: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  25	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  25	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 25: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 25: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 31b, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 25: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 30: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 30: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 35: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 35 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 10a50cb3, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 35: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 35: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 35: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  35	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  35	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 35: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 35: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: b3, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 35: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 40: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 40: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 45: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 45 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 8cce7300, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 45: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 45: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 45: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  45	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  45	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 45: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 45: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 300, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 45: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 50: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 50: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 55: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 55 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 6a3faa02, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 55: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 55: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 55: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  55	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  55	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 55: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 55: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 202, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 55: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 60: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 60: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 65: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 65 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: a8f8b1b9, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 65: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 65: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 65: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  65	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  65	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 65: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 65: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 1b9, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 65: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 70: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 70: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 75: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 75 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 48f98a26, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 75: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 75: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 75: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  75	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  75	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 75: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 75: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 226, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 75: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 80: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 80: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 85: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 85 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 4a423347, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 85: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 85: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 85: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  85	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  85	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 85: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 85: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 347, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 85: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 90: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 90: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 95: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 95 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: acd2ad1e, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 95: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 95: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 95: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                  95	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                  95	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 95: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 95: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 11e, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 95: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 100: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 100: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 105: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 105 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 70aaf7aa, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 105: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 105: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 105: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 105	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 105	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 105: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 105: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 3aa, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 105: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 110: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 110: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 115: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 115 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 95cb12ec, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 115: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 115: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 115: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 115	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 115	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 115: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 115: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 2ec, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 115: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 120: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 120: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 125: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 125 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 1c32fee2, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 125: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 125: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 125: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 125	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 125	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 125: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 125: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 2e2, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 125: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 130: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 130: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 135: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 135 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 3e2bb8e, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 135: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 135: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 135: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 135	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 135	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 135: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 135: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 38e, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 135: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 140: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 140: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 145: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 145 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 4cda48ef, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 145: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 145: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 145: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 145	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 145	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 145: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 145: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: ef, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 145: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 150: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 150: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 155: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 155 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: f719a705, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 155: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 155: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 155: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 155	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 155	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 155: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 155: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 305, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 155: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 160: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 160: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 165: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 165 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 2a0d5d0, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 165: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 165: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 165: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 165	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 165	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 165: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 165: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 1d0, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 165: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 170: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 170: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 175: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 175 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 6f6fd550, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 175: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 175: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 175: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 175	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 175	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 175: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 175: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 150, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 175: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 180: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 180: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 185: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 185 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 3d86a586, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 185: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 185: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 185: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 185	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 185	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 185: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 185: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 186, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 185: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 190: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 190: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 195: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 195 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 6ce54671, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 195: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 195: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 195: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 195	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 195	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 195: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 195: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 271, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 195: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 200: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 200: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 205: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 205 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: fd8bb811, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 205: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 205: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 205: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 205	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 205	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 205: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 205: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 11, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 205: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 210: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 210: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 215: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 215 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: ef79fa66, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 215: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 215: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 215: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 215	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 215	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 215: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 215: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 266, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 215: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 220: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 220: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 225: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 225 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 42b00d70, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 225: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 225: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 225: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 225	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 225	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 225: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 225: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 170, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 225: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 230: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 230: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 235: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 235 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: f72df130, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 235: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 235: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 235: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 235	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 235	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 235: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 235: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 130, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 235: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 240: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 240: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 245: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 245 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: cf3a5a5, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 245: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 245: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 245: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 245	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 245	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 245: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 245: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 1a5, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 245: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 250: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 250: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 255: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 255 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 84012acf, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 255: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 255: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 255: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 255	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 255	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 255: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 255: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 2cf, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 255: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 260: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 260: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 265: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 265 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 5c5680ae, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 265: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 265: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 265: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 265	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 265	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 265: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 265: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: ae, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 265: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 270: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 270: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 275: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 275 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 95f3a743, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 275: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 275: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 275: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 275	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 275	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 275: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 275: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 343, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 275: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 280: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 280: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 285: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 285 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 30d89e8c, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 285: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 285: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 285: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 285	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 285	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 285: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 285: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 28c, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 285: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 290: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 290: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 295: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 295 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 2d05668b, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 295: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 295: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 295: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 295	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 295	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 295: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 295: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 28b, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 295: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 300: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 300: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 305: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 305 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 8a79ff3f, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 305: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 305: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 305: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 305	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 305	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 305: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 305: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 33f, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 305: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 310: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 310: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 315: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 315 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 493668a8, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 315: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 315: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 315: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 315	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 315	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 315: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 315: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: a8, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 315: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 320: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 320: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 325: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 325 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 693aa2c7, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 325: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 325: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 325: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 325	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 325	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 325: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 325: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 2c7, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 325: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 330: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 330: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 335: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 335 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: ea86ad9a, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 335: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 335: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 335: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 335	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 335	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 335: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 335: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 19a, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 335: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 340: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 340: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 345: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 345 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: cd1a8923, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 345: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 345: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 345: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 345	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 345	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 345: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 345: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 123, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 345: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 350: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 350: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 355: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 355 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: 10f63561, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 355: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 355: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 355: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 355	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 355	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 355: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 355: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 161, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 355: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 360: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/test/sync_fifo_write_test.sv(39) @ 360: uvm_test_top [sync_fifo_write_test] write scenario 2 is completed
+UVM_INFO ./../UVME/sequence/sync_fifo_write_sequence.sv(25) @ 360: uvm_test_top.env.sync_fifo_agnt.sequencer@@write_seq [sync_fifo_write_sequence] Reset seq: inside body
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 360: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 365: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 365 | hw_rst: 1, sw_rst: 1, top_wr_en: 1, top_wr_data: b619b254, top_rd_en: 0, almost_full_value: 3e8, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 365: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 365: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 365: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 365	 display 1 trans.top_rd_en = 0, read_delay_clk=1
+                 365	 display 2 trans.top_rd_en = 0, read_delay_clk=1
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(68) @ 365: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] ------ ::  FAILED MATCH  :: ------
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(69) @ 365: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] Exp_Data: 254, Act_data=0
+UVM_INFO ./../UVME/env/sync_fifo_scoreboard.sv(70) @ 365: uvm_test_top.env.sync_fifo_scb [SCOREBOARD] -------------------------------------------------------
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 370: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 370: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 375: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 375 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: bc84fffc, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 375: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 375: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 375: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 375	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 375	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 380: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 380: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 385: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 385 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 24381e5a, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 385: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 385: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 385: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 385	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 385	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 390: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 390: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 395: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 395 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: ed330d6d, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 395: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 395: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 395: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 395	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 395	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 400: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 400: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 405: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 405 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 1775cd35, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 405: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 405: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 405: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 405	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 405	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 410: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 410: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 415: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 415 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: a3005db2, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: f5c3771b, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 415: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 415: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 415: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 415	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 415	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 420: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 420: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 425: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 425 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 8fd2bee4, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 10a50cb3, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 425: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 425: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 425: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 425	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 425	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 430: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 430: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 435: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 435 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: ddecf0cc, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 8cce7300, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 435: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 435: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 435: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 435	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 435	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 440: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 440: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 445: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 445 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 8d4ef369, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 6a3faa02, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 445: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 445: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 445: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 445	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 445	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 450: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 450: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 455: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 455 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 9df8c6bb, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: a8f8b1b9, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 455: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 455: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 455: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 455	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 455	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 460: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 460: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 465: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 465 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: fea6ac2, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 48f98a26, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 465: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 465: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 465: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 465	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 465	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 470: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 470: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 475: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 475 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: e323df7e, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 4a423347, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 475: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 475: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 475: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 475	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 475	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 480: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 480: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 485: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 485 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 17a524f0, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: acd2ad1e, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 485: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 485: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 485: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 485	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 485	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 490: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 490: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 495: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 495 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: ad6e3b16, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 70aaf7aa, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 495: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 495: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 495: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 495	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 495	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 500: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 500: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 505: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 505 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: a47f21f2, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 95cb12ec, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 505: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 505: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 505: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 505	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 505	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 510: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 510: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 515: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 515 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: fcd7d983, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 1c32fee2, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 515: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 515: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 515: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 515	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 515	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 520: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 520: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 525: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 525 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: b67861ca, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 3e2bb8e, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 525: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 525: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 525: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 525	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 525	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 530: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 530: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 535: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 535 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: d160bac5, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 4cda48ef, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 535: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 535: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 535: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 535	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 535	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 540: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 540: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 545: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 545 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 4d90e476, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: f719a705, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 545: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 545: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 545: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 545	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 545	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 550: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 550: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 555: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 555 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 2b08dedc, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 2a0d5d0, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 555: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 555: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 555: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 555	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 555	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 560: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 560: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 565: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 565 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 69c8a9f7, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 6f6fd550, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 565: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 565: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 565: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 565	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 565	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 570: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 570: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 575: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 575 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 9d045c7, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 3d86a586, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 575: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 575: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 575: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 575	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 575	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 580: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 580: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 585: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 585 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: b1fb24d, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 6ce54671, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 585: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 585: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 585: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 585	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 585	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 590: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 590: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 595: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 595 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 6db6ef88, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: fd8bb811, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 595: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 595: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 595: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 595	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 595	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 600: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 600: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 605: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 605 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 3195fd77, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: ef79fa66, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 605: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 605: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 605: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 605	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 605	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 610: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 610: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 615: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 615 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 56bcdc1d, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 42b00d70, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 615: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 615: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 615: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 615	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 615	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 620: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 620: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 625: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 625 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: dd2b8b77, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: f72df130, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 625: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 625: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 625: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 625	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 625	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 630: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 630: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 635: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 635 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: c4e20b86, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: cf3a5a5, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 635: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 635: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 635: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 635	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 635	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 640: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 640: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 645: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 645 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: de05c4b, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 84012acf, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 645: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 645: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 645: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 645	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 645	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 650: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 650: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 655: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 655 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: b8267dc5, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 5c5680ae, enq_fifo_full: 0, valid: 1, almost_full: 1, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 655: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 655: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 655: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 655	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 655	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 660: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 660: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 665: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 665 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: c3b46ff4, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 95f3a743, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 665: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 665: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 665: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 665	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 665	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 670: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 670: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 675: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 675 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 308a32d8, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 30d89e8c, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 675: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 675: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 675: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 675	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 675	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 680: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 680: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 685: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 685 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: fea7c672, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 2d05668b, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 0, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 685: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 685: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 685: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 685	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 685	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 690: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 690: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 695: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 695 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 2e0d2ac0, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 8a79ff3f, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 695: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 695: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 695: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 695	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 695	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 700: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 700: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 705: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 705 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: beba5fc4, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 493668a8, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 705: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 705: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 705: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 705	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 705	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 710: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/test/sync_fifo_write_test.sv(45) @ 710: uvm_test_top [sync_fifo_write_test] write scenario 3 is completed
+UVM_INFO ./../UVME/sequence/sync_fifo_write_sequence.sv(25) @ 710: uvm_test_top.env.sync_fifo_agnt.sequencer@@write_seq [sync_fifo_write_sequence] Reset seq: inside body
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(30) @ 710: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Inside get method
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 715: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 715 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: b0af657d, top_rd_en: 1, almost_full_value: 9, almost_empty_value: 5, top_rd_data: 693aa2c7, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 715: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 715: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 715: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 715	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 715	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_driver.sv(37) @ 720: uvm_test_top.env.sync_fifo_agnt.driver [Driver_class] Reset is high!
+UVM_INFO ./../UVME/test/sync_fifo_write_test.sv(51) @ 720: uvm_test_top [sync_fifo_write_test] write scenario 4 is completed
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 725: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 725 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: ea86ad9a, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 725: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 725: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 725: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 725	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 725	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 735: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 735 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: cd1a8923, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 0, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 735: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 735: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 735: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 735	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 735	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 745: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 745 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: 10f63561, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 0
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 745: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 745: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 745: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 745	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 745	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 755: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 755 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: b619b254, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 755: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 755: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 755: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 755	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 755	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 765: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 765 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: 0, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 765: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 765: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 765: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 765	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 765	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 775: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 775 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: 0, enq_fifo_full: 0, valid: 1, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 775: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 775: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 775: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 775	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 775	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 785: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 785 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 785: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 785: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 785: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 785	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 785	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 795: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 795 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 795: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 795: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 795: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 795	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 795	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 805: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 805 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 805: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 805: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 805: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 805	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 805	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(59) @ 815: uvm_test_top.env.sync_fifo_agnt.monitor [SYNC_FIFO_MONITOR] Time: 815 | hw_rst: 1, sw_rst: 1, top_wr_en: 0, top_wr_data: 0, top_rd_en: 1, almost_full_value: 5, almost_empty_value: 9, top_rd_data: 0, enq_fifo_full: 0, valid: 0, almost_full: 0, almost_empty: 1, ext_mem_full: 0, ext_mem_empty: 1, overflow: 0, underflow: 1
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(61) @ 815: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] End of Monitor
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(34) @ 815: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Monitor start
+UVM_INFO ./../UVME/agent/sync_fifo_monitor.sv(36) @ 815: uvm_test_top.env.sync_fifo_agnt.monitor [uvm_test_top.env.sync_fifo_agnt.monitor] Inside Monitor run phase
+                 815	 display 1 trans.top_rd_en = 1, read_delay_clk=1
+                 815	 display 2 trans.top_rd_en = 1, read_delay_clk=1
+UVM_INFO /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 820: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  593
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[Driver_class]   144
+[RNTST]     1
+[SCOREBOARD]   105
+[SYNC_FIFO_MONITOR]    82
+[TEST_DONE]     1
+[UVMTOP]     1
+[sync_fifo_driver]     1
+[sync_fifo_write_sequence]     4
+[sync_fifo_write_test]     5
+[uvm_test_top]     1
+[uvm_test_top.env.sync_fifo_agnt.monitor]   248
+Simulation complete via $finish(1) at time 820 NS + 45
+/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on Feb 13, 2023 at 22:58:19 IST  (total: 00:00:05)
